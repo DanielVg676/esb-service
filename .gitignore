@@ -56,3 +56,7 @@ application-*.yml
 # Git
 .git/
 .gitignore
+
+
+
+!target/*.jar

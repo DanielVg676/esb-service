@@ -72,7 +72,7 @@ public class ESBController {
 
         try {
             String response = webClient.get()
-                .uri("http://users:3003/api/users/getuser")
+                .uri("https://users-production-5ca0.up.railway.app/api/users/getuser")
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .exchangeToMono(clientResponse -> clientResponse.bodyToMono(String.class))
                 .doOnError(error -> System.out.println("Error: " + error.getMessage()))
